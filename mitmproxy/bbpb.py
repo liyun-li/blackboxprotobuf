@@ -531,7 +531,7 @@ def _message_hash(
             return f"websocket-request|{flow.request.url}"
     else:
         logging.warn(
-            f"BBPB content view got a view that was not websocket, request or response: {type(http_message)}"
+            f"BBPB content view got a view that was not websocket, request or response: {type(message)}"
         )
         return None
 
